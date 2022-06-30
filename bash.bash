@@ -1,0 +1,1 @@
+find . -type f \( -name '*.ipynb' -o -name '*.py' \) | sort -t '/' -k 1 -k 2 | awk -v base=https://github.com/ApolloDataTeam/Knowledge_Repository/blob/main/ -f ./scr.bash >> README.md
